@@ -1,0 +1,40 @@
+.dessertsSection :global .row {
+  --bs-gutter-x: 4rem;
+}
+
+.drinksWrapper {
+  margin-bottom: 7.2rem;
+}
+
+.dessertsDishesWrapper {
+  margin-top: 7.2rem;
+}
+
+.dessertAnchor:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.dessertNameCard h5 {
+  transition: var(--transition-smooth);
+}
+
+.dessertDishCard:hover h5 {
+  color: var(--lemon-curry);
+}
+
+.dessertNameCard {
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--guinea-pig-white);
+  margin-bottom: 9px;
+}
+
+.dessertsImgWrap {
+  --bs-aspect-ratio: 94%;
+}
+/* resposnive css start */
+@media (max-width: 1199px) {
+  .dessertsDishesWrapper {
+    margin-top: 6rem;
+  }
+}
+/* resposnive css end */

@@ -1,0 +1,39 @@
+.contactUsSection {
+  /* background-image: url("../../../assets/images/banner/tan-color-banner.jpg"); */
+  background-color: rgba(var(--rgb-matt-black), 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactUsFormWrapper {
+  margin-top: 24px;
+}
+
+.contactUsImageWrapper {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.gridImg {
+  --bs-aspect-ratio: 112%;
+}
+
+.gridImg3 {
+  --bs-aspect-ratio: 48%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.formWrapper {
+  padding: 2.8rem 2rem;
+}
+
+.googleMap {
+  transition: var(--transition-smooth);
+}
+
+.googleMap :global iframe {
+  height: 70rem;
+  transition: var(--transition-smooth);
+}

@@ -1,0 +1,26 @@
+.heroSection {
+  min-height: 100vh;
+  padding: calc(var(--space-md) + 2rem) 0;
+  background: linear-gradient(180deg,
+      rgba(21, 21, 21, 0.37) 0%,
+      rgba(21, 21, 21, 0.37) 100%),
+    url("../../../assets/images/banner/hero-banner.jpg");
+  background-color: rgba(21, 21, 21, 0.47);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  max-width: 11.4rem;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}

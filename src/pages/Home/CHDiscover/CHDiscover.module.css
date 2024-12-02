@@ -1,0 +1,61 @@
+.CHDiscoverSection {
+  background-image: url("../../../assets/images/banner/tan-color-banner.jpg");
+  background-color: var(--sugar-milk);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.storyCImgWrap {
+  max-width: 478px;
+  flex: 0 0 auto;
+}
+
+.storyImgCard {
+  --bs-aspect-ratio: 124%;
+}
+
+.storyContent {
+  padding: 4.5rem;
+}
+
+.storyCard {
+  border-radius: 3px;
+  display: flex;
+  justify-content: stretch;
+  margin-top: 4.8rem;
+}
+
+.storySubImgCard {
+  border: 3px solid var(--white);
+  max-width: 38.7rem;
+  max-height: 28.1rem;
+  right: -50%;
+  bottom: -8%;
+}
+
+/* resposnive css start */
+@media (max-width: 1023px) {
+  .storyCard {
+    flex-direction: column-reverse;
+  }
+
+  .storyContent {
+    padding: 0;
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .storySubImgCard {
+    right: -10%;
+  }
+}
+
+@media (max-width: 575px) {
+  .storySubImgCard {
+    display: none;
+  }
+}
+
+/* resposnive css end */
