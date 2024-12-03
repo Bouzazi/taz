@@ -2,7 +2,7 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import { CHFormControl, CHButton } from "../../../components";
 import clsx from "clsx";
 import styles from "./CHContactForm.module.css";
-// import { contactUsImgOne, contactUsImgThree, contactUsImgTwo } from "../../../constant/imageData";
+import { contactUsImg1, contactUsImg2, contactUsImg3 } from "../../../constant/imageData";
 export const CHContactForm = () => {
   return (
     <>
@@ -26,22 +26,16 @@ export const CHContactForm = () => {
                       className={clsx(styles.contactUsImageWrapper, "d-grid")}
                     >
                       <div className={clsx(styles.gridImg, "ratio")}>
-                        {/* <img src={contactUsImgOne} alt="contact-us-img-1" width={"100%"} height={"100%"} className="object-fit-cover" /> */}
-                        <div className="h6 bg-shadowed-steel ch-text-white d-flex justify-content-center align-items-center w-100 h-100">
-                          600x597
-                        </div>
+                        <img src={contactUsImg1} alt="contact-us-img-1" width={"100%"} height={"100%"} className="object-fit-cover" /> 
+                      
                       </div>
                       <div className={clsx(styles.gridImg, "ratio")}>
-                        {/* <img src={contactUsImgTwo} alt="contact-us-img-2" width={"100%"} height={"100%"} className="object-fit-cover" /> */}
-                        <div className="h6 bg-shadowed-steel ch-text-white d-flex justify-content-center align-items-center w-100 h-100">
-                          600x597
-                        </div>
+                        <img src={contactUsImg2} alt="contact-us-img-2" width={"100%"} height={"100%"} className="object-fit-cover" /> 
+                       
                       </div>
                       <div className={clsx(styles.gridImg3, "ratio")}>
-                        {/* <img src={contactUsImgThree} alt="contact-us-img-3" width={"100%"} height={"100%"} className="object-fit-cover" /> */}
-                        <div className="h6 bg-shadowed-steel ch-text-white d-flex justify-content-center align-items-center w-100 h-100">
-                          600x597
-                        </div>
+                        <img src={contactUsImg3} alt="contact-us-img-3" width={"100%"} height={"100%"} className="object-fit-cover" /> 
+                       
                       </div>
                     </div>
                   </Col>

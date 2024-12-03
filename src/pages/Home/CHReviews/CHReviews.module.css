@@ -3,7 +3,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* background: linear-gradient(0deg, rgba(var(--rgb-matt-black), 0.5) 0%, rgba(var(--rgb-matt-black), 0.5) 100%), url("../../../assets/images/banner/review-banner.jpg"); */
+   background: linear-gradient(0deg, rgba(var(--rgb-matt-black), 0.5) 0%, rgba(var(--rgb-matt-black), 0.5) 100%), url("../../../assets/images/banner/Babish2.jpg.jpeg");
   font-size: 3rem;
   color: var(--shadowed-steel);
   background-color: rgba(var(--rgb-woodprecker-green), 0.4);

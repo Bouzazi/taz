@@ -22,6 +22,14 @@ import dishNine from "../assets/images/other/dish-9.png";
 import dessert from "../assets/images/other/dessert.png";
 import drink from "../assets/images/other/drink.png";
 
+import contactUsImg1 from "../assets/images/other/contact-us-img-1.png";
+import contactUsImg2 from "../assets/images/other/contact-us-img-2.png";
+import contactUsImg3 from "../assets/images/other/contact-us-img-3.png";
+
+import avatar1 from "../assets/images/avatar/avatar-1.png"
+import avatar2 from "../assets/images/avatar/avatar-2.png"
+import avatar3 from "../assets/images/avatar/avatar-3.png"
+
 
 export {
     chfLogo,
@@ -43,5 +51,11 @@ export {
     dishThree,
     dishTwo,
     dessert,
-    drink
+    drink,
+    contactUsImg1,
+    contactUsImg2,
+    contactUsImg3,
+    avatar1,
+    avatar2,
+    avatar3
 }

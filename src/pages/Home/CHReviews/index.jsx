@@ -46,9 +46,8 @@ export const CHReviews = () => {
                     <div className={clsx(styles.reviewSwiperCard, "ch-bg-white text-center d-flex flex-column justify-content-space-between gap-3")}>
                       <div>
                         <div className={clsx(styles.reviewAvatarCard, "d-flex align-items-center justify-content-center mx-auto rounded-circle overflow-hidden")}>
-                          {/* <Image src={slider.imgSrc} className={"flex-0-auto w-100 h-100 object-fit-cover"} alt={`swiper-img-${index + 1}`} /> */}
-                          <div className="p sm bg-dugong ch-text-white d-flex justify-content-center align-items-center w-100 h-100">73x73</div>
-                        </div>
+                           <Image src={slider.imgSrc} className={"flex-0-auto w-100 h-100 object-fit-cover"} alt={`swiper-img-${index + 1}`} /> 
+                          </div>
                         <p className="big font-josefin text-ellipsis line-clamp-4">{slider.reviewMessage}</p>
                       </div>
                       <span className="p sm d-block text-lemon-curry font-josefin mt-auto text-uppercase">{slider.name}</span>
