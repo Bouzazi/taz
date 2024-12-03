@@ -3,7 +3,7 @@ import { icons } from "../../constant/icons";
 import clsx from "clsx";
 import { restaurantTimeMap, socialLinksMap } from "../../constant/data";
 import styles from "./CHFooter.module.css";
-// import { chfLogo } from "../../constant/imageData";
+ import { chfLogo } from "../../constant/imageData";
 export const CHFooter = () => {
   return (
     <>
@@ -14,10 +14,8 @@ export const CHFooter = () => {
               href="/"
               className={clsx(styles.footerLogoWrap, "w-100 mb-4 mb-sm-0")}
             >
-              {/* <Image src={chfLogo} alt="Cooking Healthy Food Logo" fluid /> */}
-              <div className="bg-sugar-milk w-100 text-jet d-flex justify-content-center align-items-center">
-                130X66
-              </div>
+               <img src={chfLogo} alt="Cooking Healthy Food Logo" fluid /> 
+              
             </a>
             <div className={styles.footerDetailsCard}>
               <span className="d-block fw-bold ch-text-white line-height-normal text-uppercase">

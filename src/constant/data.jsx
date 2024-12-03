@@ -5,7 +5,7 @@ import {
   nuddles,
   salad,
   sandwich,
-  // avatarOne, avatarThree, avatarTwo,
+   avatar1, avatar2, avatar3,
   dishEight, dishFive, dishFour, dishOne, dishSeven, dishSix, dishThree, dishTwo, dishNine
 } from "./imageData";
 import { icons } from "./icons";
@@ -194,27 +194,27 @@ export const dessertsNamesData = [
 
 export const reviewsSwiperData = [
   {
-    // imgSrc: avatarOne,
+   imgSrc: avatar1,
     reviewMessage: "I've visited many restaurants, but Cooking Healthy Food stands out for its impeccable service and delicious food",
     name: "Josie rizal",
   },
   {
-    // imgSrc: avatarTwo,
+     imgSrc: avatar2,
     reviewMessage: "The flavors at Cooking Healthy Food  are unmatched. Each dish was a masterpiece",
     name: "rachel springer",
   },
   {
-    // imgSrc: avatarThree,
+     imgSrc: avatar3,
     reviewMessage: "We celebrated a special occasion at Cooking Healthy Food, and it exceeded all expectations",
     name: "fabien smith",
   },
   {
-    // imgSrc: avatarOne,
+     imgSrc: avatar1,
     reviewMessage: "I've visited many restaurants, but Cooking Healthy Food stands out for its impeccable service and delicious food",
     name: "Josie rizal",
   },
   {
-    // imgSrc: avatarTwo,
+     imgSrc: avatar2,
     reviewMessage: "he flavors at Cooking Healthy Food  are unmatched. Each dish was a masterpiece",
     name: "rachel springer",
   },
