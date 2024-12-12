@@ -3,7 +3,9 @@ import { CHFormControl, CHButton } from "../../../components";
 import clsx from "clsx";
 import styles from "./CHContactForm.module.css";
 import { contactUsImg1, contactUsImg2, contactUsImg3 } from "../../../constant/imageData";
+import { useTranslation } from "react-i18next";
 export const CHContactForm = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section
@@ -14,9 +16,9 @@ export const CHContactForm = () => {
           <Row>
             <Col xs={12}>
               <span className="primary-title d-block mb-4 text-start">
-                Reservation
+                  {t("InscriLabel")}
               </span>
-              <h2 className="secondary-title text-start">Book a Table</h2>
+              <h2 className="secondary-title text-start" style={{fontSize:"1.7em"}}>{t("RegistrationLabel")}</h2>
             </Col>
             <Col xs={12}>
               <div className={styles.contactUsFormWrapper}>
@@ -47,7 +49,7 @@ export const CHContactForm = () => {
                             <CHFormControl
                               controlid="namecontrolid"
                               id="nameId"
-                              label="Name"
+                              label={t("Name")}
                               type="text"
                               placeholder=""
                               formGroupClassName=""
@@ -59,7 +61,7 @@ export const CHContactForm = () => {
                             <CHFormControl
                               controlid="namecontrolid"
                               id="emailId"
-                              label="Email"
+                              label={t("Email")}
                               type="email"
                               placeholder=""
                               formGroupClassName=""
@@ -79,23 +81,12 @@ export const CHContactForm = () => {
                               required
                             />
                           </Col>
-                          <Col xs={12} sm={6}>
-                            <CHFormControl
-                              controlid="namecontrolid"
-                              id="timeId"
-                              label="Time"
-                              type="time"
-                              placeholder=""
-                              formGroupClassName=""
-                              inputClassName=""
-                              required
-                            />
-                          </Col>
+                       
                           <Col xs={12}>
                             <CHFormControl
                               controlid="namecontrolid"
                               id="textareaId"
-                              label="Tell us more"
+                              label={t("TellLabel")}
                               as="textarea"
                               rows="8"
                               placeholder=""
@@ -106,7 +97,7 @@ export const CHContactForm = () => {
                           </Col>
                           <div className="mt-5 pt-4">
                             <CHButton CHBtnClassname="text-uppercase m-auto text-jet">
-                              send
+                              {t("SInscriLabel")}
                             </CHButton>
                           </div>
                         </Row>

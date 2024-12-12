@@ -1,10 +1,11 @@
 import clsx from "clsx";
-import React from "react";
+import { useTranslation } from "react-i18next";
 import { Container } from "react-bootstrap";
 import { ourSpecialitiesList } from "../../../constant/data";
 import styles from "./CHOurSpecialities.module.css";
 
 export const CHOurSpecialities = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section
@@ -15,9 +16,10 @@ export const CHOurSpecialities = () => {
       >
         <Container>
           <span className="primary-title mb-4 d-block text-capitalize">
-            The best Place of culinary
+          {t("endroitLabel")}
+
           </span>
-          <h2 className="secondary-title text-white">our specialities</h2>
+          <h2 className="secondary-title text-white">{t("SpecLabel")}</h2>
           <div className={styles.ourSpecialitiesGrid}>
             {ourSpecialitiesList &&
               ourSpecialitiesList.map((item, index) => {

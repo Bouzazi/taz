@@ -1,4 +1,6 @@
 import chfLogo from "../assets/images/logo/chf-logo.svg";
+import elWaeedLogo from "../assets/images/logo/elWaeedLogo.png"
+
 import fennel from "../assets/images/other/fennel.jpg";
 import chfDoe from "../assets/images/other/chef-Doe.jpg";
 
@@ -33,6 +35,7 @@ import avatar3 from "../assets/images/avatar/avatar-3.png"
 
 export {
     chfLogo,
+    elWaeedLogo,
     fennel,
     chfDoe,
     pasta,

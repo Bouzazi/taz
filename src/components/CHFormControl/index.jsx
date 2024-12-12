@@ -20,6 +20,7 @@ export const CHFormControl = ({
           <Form.Group
             controlid={id}
             className={clsx(styles.formGroup, formGroupClassName)}
+            id="contactUsSection"
           >
             <Form.Label htmlFor={id}>{label}</Form.Label>
             <Form.Control
