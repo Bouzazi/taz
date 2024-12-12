@@ -6,6 +6,28 @@
   background-size: cover;
 }
 
+
+/* Highlighted Text */
+.highlightText {
+  display: inline-block;
+  font-size: 0.9em; /* Slightly larger than body text */
+  font-weight: bold;
+  font-style: italic;
+  padding: 2px 2px;
+  color: #fff; /* White text for contrast */
+  background-color: #cba525; /* Gold background for emphasis */
+  border-radius: 5px; /* Rounded edges for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Span */
+.highlightText:hover {
+  transform: scale(1.0009); /* Slight zoom on hover */
+  background-color: #fff; /* Reverse colors on hover */
+  color: #cba525; /* Gold text */
+}
+
 .storyCImgWrap {
   max-width: 478px;
   flex: 0 0 auto;

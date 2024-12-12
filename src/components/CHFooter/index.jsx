@@ -1,37 +1,33 @@
-import { Col, Container, NavItem, NavLink, Row } from "react-bootstrap";
-import { icons } from "../../constant/icons";
+import {  Container, } from "react-bootstrap";
+
 import clsx from "clsx";
 import { restaurantTimeMap, socialLinksMap } from "../../constant/data";
 import styles from "./CHFooter.module.css";
- import { chfLogo } from "../../constant/imageData";
+import { useTranslation } from "react-i18next";
+
 export const CHFooter = () => {
+  const { t } = useTranslation();
   return (
     <>
       <footer className={clsx(styles.footerSection, "section-pt")}>
-        <Container>
+        <Container id="_footerDetailsCard_8dfwx_5">
           <div className={clsx(styles.footerGridWrap, "d-grid section-pb")}>
-            <a
-              href="/"
-              className={clsx(styles.footerLogoWrap, "w-100 mb-4 mb-sm-0")}
-            >
-               <img src={chfLogo} alt="Cooking Healthy Food Logo" fluid /> 
-              
-            </a>
+          
             <div className={styles.footerDetailsCard}>
               <span className="d-block fw-bold ch-text-white line-height-normal text-uppercase">
-                address
+                {t("adressLabel")}
               </span>
               <a
-                href="https://maps.app.goo.gl/oRKaXU2yHh1r7eYk7"
+                href="https://www.google.de/maps/place/Av.+de+L%E2%80%99ind%C3%A9pendance,+Tunesien/@36.8022498,10.1021202,17z/data=!3m1!4b1!4m6!3m5!1s0x12fd323f8b4dae5d:0x6d8ea6ebd63cdac5!8m2!3d36.8022455!4d10.1046951!16s%2Fg%2F1tf12svn?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 className="fw-normal ch-text-white line-height-normal"
               >
-                956 ABCD Street, Surat, Gujarat
+                Avenue indépendance Denden , Tunis, Tunisia
               </a>
             </div>
             <div className={styles.footerDetailsCard}>
               <span className="d-block fw-bold ch-text-white line-height-normal text-uppercase">
-                we are open
+             {t("openTimeLabel")}       
               </span>
               {restaurantTimeMap.map((restaurantItem, restaurantIndex) => {
                 return (
@@ -50,24 +46,25 @@ export const CHFooter = () => {
             </div>
             <div className={styles.footerDetailsCard}>
               <span className="d-block fw-bold ch-text-white line-height-normal text-uppercase">
-                reservation
+                Contact
               </span>
               <a
                 href="tel:+916382791462"
                 className="fw-normal ch-text-white line-height-normal d-block"
               >
-                +916382791462
+                
+              +216 20 504 143
               </a>
               <a
                 href="mailto:abcdef@gmail.com"
                 className="fw-normal ch-text-white line-height-normal d-block"
               >
-                abcdef@gmail.com
+                centreelwaeed55@gmail.com
               </a>
             </div>
             <div className={styles.footerDetailsCard}>
               <span className="d-block fw-bold ch-text-white line-height-normal text-uppercase">
-                stay connected
+              {t("ConnectLabel")}
               </span>
               <ul className="d-flex align-items-center gap-4">
                 {socialLinksMap.map((socialIconItem, socialIndex) => {
@@ -91,7 +88,7 @@ export const CHFooter = () => {
         </Container>
         <div className={styles.copyrightWrapper}>
           <span className="p sm d-block text-center ch-text-white">
-            © 2024 Restaurant Landing, Made by Omnibubble.
+            {t("copyrights")}
           </span>
         </div>
       </footer>

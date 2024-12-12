@@ -1,15 +1,18 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
+
 import { Container } from "react-bootstrap";
 import { clsx } from "clsx";
 import { chfDoe, fennel } from "../../../constant/imageData";
 import styles from "./CHDiscover.module.css";
 
 export const CHDiscover = () => {
+  const { t } = useTranslation();
   return (
-    <section className={clsx("section-py", styles.CHDiscoverSection)}>
+     <section className={clsx("section-py", styles.CHDiscoverSection)} id="_CHDiscoverSection_424bv_1">
+
       <Container>
-        <span className="primary-title mb-4 d-block">Discover</span>
-        <h2 className="secondary-title">Where Vision Meets Reality</h2>
+        <span className="primary-title mb-4 d-block">{t("Sûr-ceLabel")}</span>
+        <h2 className="secondary-title">{t("QuiLabel")}</h2>
         <div>
           <div className={styles.storyCard}>
             <div className={clsx(styles.storyCImgWrap, "d-flex w-100 position-relative")}>
@@ -30,11 +33,16 @@ export const CHDiscover = () => {
             </div>
             <div className={styles.storyContent}>
               <h3 className="fw-bold font-josefin text-capitalize text-jet mb-5">
-                Where Flavor Meets Elegance
+              {t("LàléléganceLabel")}
               </h3>
               <p className="text-capitalize text-shadowed-steel lh-16 text-ellipsis line-clamp-5 mb-4">
-                Experience the pinnacle of Healthy food Dining with our award winning Restaurant , where everyone wants to be for the Healthy food and mind-blowing grilling.
-                we Typically serve the best and most delicious food and drinks prepared with high quality ingredients that are maintained and cooked by our own expert cheifs.
+              <span>{t("FondationLabel")}</span>
+              <span>
+              {t("PartenaireLabel")}
+              </span>
+              <span>
+                 {t("ObjectifLabel")}<span className={styles.highlightText}>{t("DevloperLabel")} </span>
+                </span>
               </p>
             </div>
           </div>

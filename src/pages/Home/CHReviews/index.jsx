@@ -5,15 +5,17 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import styles from "./CHReviews.module.css"
 import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 
 export const CHReviews = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className={clsx(styles.reviewSection, "section-py position-relative")}>
         <Container className="z-1">
           <div>
-            <span className="primary-title d-block mb-4">Reviews</span>
-            <h2 className="secondary-title text-white">What client say about us</h2>
+            <span className="primary-title d-block mb-4">{t("TeamLabel")}</span>
+            <h2 className="secondary-title text-white">{t("RenLabel")} </h2>
           </div>
           <div className={styles.reviewsSwiperWrapper}>
             <Swiper

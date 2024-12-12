@@ -3,8 +3,11 @@ import clsx from "clsx";
 import styles from "./CHDeliciousMenu.module.css";
 import { menuDishesData } from "../../../constant/data";
 import { icons } from "../../../constant/icons";
+import { useTranslation } from "react-i18next";
+
 
 export const CHDeliciousMenu = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section
@@ -13,8 +16,11 @@ export const CHDeliciousMenu = () => {
       >
         <Container>
           <div>
-            <span className="primary-title d-block mb-4">Experience</span>
-            <h2 className="secondary-title">delicious menu</h2>
+            <span className="primary-title d-block mb-4">
+              {t("ExpLabel")}
+            </span>
+            <h2 className="secondary-title">{t("EveLabel")}
+            </h2>
           </div>
           <div className={styles.menuDishesWrapper}>
             <Row className="g-4">
