@@ -32,7 +32,8 @@ const resources = {
  "adressLabel":"Address",
  "openTimeLabel":"We are open",
  "ConnectLabel":"Let's stay Connected",
- "copyrights":"© 2024 Platfome Culinaire, Made by Ronin."
+ "copyrights":"© 2024 Platfome Culinaire, Made by Ronin.",
+ "inscriLabel":"Register Here",
     },
   },
   fr: {
@@ -42,7 +43,7 @@ const resources = {
        "Sûr-ceLabel":"Sûr-ce",
        "El_WaeedCulinatifLabel":"El Waeed Platfome Culinatif",
        "La_PassionLabel":"La Passion du Gout",
-       "Au_cœurLabel:":"Au cœur de notre monde",
+       "Au_cœurLabel":"Au cœur de notre monde",
        "QuiLabel":"Qui Sommes -Nous ?",
       "LàléléganceLabel":"Là où la Saveur Rencontre lélégance",
 
@@ -68,7 +69,8 @@ const resources = {
      "adressLabel":"Adresse",
      "openTimeLabel":"Nous Sommes Ouverts",
     "ConnectLabel": " Restons connectés",
-    "copyrights":"© 2024 Plateforme Culinaire, Réalisé par Ronin."
+    "copyrights":"© 2024 Plateforme Culinaire, Réalisé par Ronin.",
+     "inscriLabel":"S'inscrire",
 
 
     },
