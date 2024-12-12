@@ -1,6 +1,8 @@
 
 import '../../pages/Home/TopNavigationBar/TopNavigationBar.css';
+import { useTranslation } from "react-i18next";
 export const CHInscription= () => {
+  const { t } = useTranslation();
     const scrollToSection = () => {
       const section = document.getElementById("contactUsSection");
       if (section) {
@@ -11,7 +13,7 @@ export const CHInscription= () => {
     return (
       <div>
         <button onClick={scrollToSection} className="scroll-button">
-        {`S'inscrire`}
+        {t("inscriLabel")}
         </button>
       </div>
     );
